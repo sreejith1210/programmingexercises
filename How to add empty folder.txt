@@ -1,0 +1,17 @@
+Source: https://www.git-tower.com/learn/git/faq/add-empty-folder-to-version-control
+
+How can I add an empty folder to a repository?
+
+Let's start with a tiny bit of background information: Git does not care about folders - 
+it cares about files. Therefore, if a folder is empty, Git will not offer you to add it to 
+version control.
+
+While there is no "standard" solution to this problem, there are a couple of different approaches to "circumvent" this behavior.
+
+Adding a .keep File
+
+A popular solution is to simply add a file named ".keep" in the corresponding folder. You can 
+now stage and commit this file and, as a consequence, also add the folder to version control.
+
+Note that .keep is not a "magical" name but rather a popular convention. Also, the file doesn't 
+serve any other purpose beyond making its containing folder visible to Git.
